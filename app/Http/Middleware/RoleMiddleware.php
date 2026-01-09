@@ -19,7 +19,7 @@ class RoleMiddleware
         if (!Auth::check() || !in_array(Auth::user()->role, $roles)) {
 
             // Optionally, you can redirect to a specific page or return a 403 response
-            abort(403, 'Unauthorized action.'. Auth::user()->role);
+            abort(403, 'Unauthorized action.');
         }
 
         return $next($request);

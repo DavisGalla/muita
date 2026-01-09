@@ -10,7 +10,7 @@
             <select class="w-[300px] p-2 rounded" name="decision" id="decision" required>
                 <option value="release" {{ old('decision', $inspection->decision) == 'release' ? 'selected' : '' }}>Release</option>
                 <option value="reject" {{ old('decision', $inspection->decision) == 'reject' ? 'selected' : '' }}>Reject</option>
-                <option value="hold" {{ old('decision', $inspection->decision) == 'hold' ? 'selected' : '' }}>Rold</option>
+                <option value="hold" {{ old('decision', $inspection->decision) == 'hold' ? 'selected' : '' }}>Hold</option>
                 
             </select>
         </div>
