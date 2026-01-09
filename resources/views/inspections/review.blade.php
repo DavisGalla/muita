@@ -1,6 +1,6 @@
 <x-app-layout>
 
-    <h2 class="text-2xl font-bold mb-4 text-white">Edit inspection</h2>
+    <h2 class="text-2xl font-bold mb-4 text-white">Review inspection</h2>
     <form method="POST" action="{{ route('inspections.reviewed', $inspection->id) }}" class="space-y-4">
         @csrf
         @method('PUT')

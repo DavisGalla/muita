@@ -1,5 +1,5 @@
 <x-app-layout>
-    <h2 class="text-2xl font-bold mb-4 text-white">Case Details</h2>
+    <h2 class="text-2xl font-bold mb-4 text-white">INspection Details</h2>
         <p class="text-gray-400"><span class="text-white">ID:</span> {{ $inspection->id }}</p>
         <p class="text-gray-400"><span class="text-white">Case ID:</span> {{ $inspection->keis_id }}</p>
         <p class="text-gray-400"><span class="text-white">Type:</span> {{ $inspection->type }}</p>

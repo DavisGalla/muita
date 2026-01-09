@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KeisController;
 use App\Http\Controllers\InspectionsController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\DocumentsController;
+use App\Models\Documents;
 
 Route::get('/', function () {
     return view('welcome');
@@ -24,6 +26,16 @@ Route::middleware('role:inspector')->group(function () {
 
     Route::get('/inspections/{id}/review', [InspectionsController::class, 'review'])->name('inspections.review');
     Route::put('/inspections/{id}', [InspectionsController::class, 'reviewed'])->name('inspections.reviewed');
+
+});
+
+
+Route::middleware('role:broker')->group(function () {
+
+    Route::get('/documents', [DocumentsController::class, 'index'])->name('docs.index');
+    Route::get('/documents/{id}', [DocumentsController::class, 'show'])->name('docs.show');
+
+
 
 });
 

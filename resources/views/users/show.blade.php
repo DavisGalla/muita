@@ -1,5 +1,5 @@
 <x-app-layout>
-    <h2 class="text-2xl font-bold mb-4 text-white">{{$user->username}} Details</h2>
+    <h2 class="text-2xl font-bold mb-4 text-white">{{$user->username}}User Details</h2>
         <p class="text-gray-400"><span class="text-white">ID:</span> {{ $user->id }}</p>
         <p class="text-gray-400"><span class="text-white">Username:</span> {{ $user->username }}</p>
         <p class="text-gray-400"><span class="text-white">Full name:</span> {{ $user->full_name }}</p>

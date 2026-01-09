@@ -14,7 +14,8 @@
                 <span class="text-xs text-gray-400">Role:</span>
                 <p class="mb-2 text-white" >{{ $user->role }}</p>
 
-                <a href="{{ route('users.show', $user->id) }}" class="bg-blue-950 hover:bg-blue-900 px-2 py-1 rounded text-white" >View</a>
+                <a href="{{ route('users.show', $user->id) }}+
+                    " class="bg-blue-950 hover:bg-blue-900 px-2 py-1 rounded text-white" >View</a>
             </div>
         @endforeach
     </div>
